@@ -1,0 +1,36 @@
+CakePhp 2.x Plugin for using ShareThis buttons
+
+The plugin adds a view elements and helper for using ShareThis functionality
+
+Setup instructions:
+1. Clone repo into app/Plugins folder
+
+2. Call the view element for adding the html where you'd like the 
+    buttons to show up in the page:
+    echo $this->element('ShareThis.share_buttons', array(
+        'display_buttons' => array(
+            'facebook',
+            'fblike',
+            'twitter',
+            'googleplus',
+            'linkedin',
+            'email',
+            'plusone',
+            ...
+        )
+    ), array(
+        'cache' => true,
+    ));
+
+3. Call the view element to add  the necessary javascipt files at the very 
+    bottom via:
+    echo $this->element('ShareThis.share_buttons', array(), array(
+        'cache' => true,
+    ));
+
+4. To style differently you can style the div class "share-this-buttons" in the
+    site css.
+
+Link for help using the plugins elements:
+http://book.cakephp.org/2.0/en/views/helpers.html
+http://book.cakephp.org/2.0/en/views.html
