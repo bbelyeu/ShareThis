@@ -28,9 +28,6 @@ Setup instructions:
         'cache' => true,
     ));
 
-4. To style differently you can style the div class "share-this-buttons" in the
-    site css.
-
 Link for help using the plugins elements:
 http://book.cakephp.org/2.0/en/views/helpers.html
 http://book.cakephp.org/2.0/en/views.html

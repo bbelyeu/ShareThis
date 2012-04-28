@@ -23,11 +23,6 @@
     );
     // display_buttons is passed as argument
     $valid_display_buttons = array_intersect($display_buttons, $available_buttons);
-?>
-<div class="share-this-buttons">
-    <?php 
-    foreach ($valid_display_buttons as $button):
-        ?><span class="st_<?php echo $button ?>" displayText="<?php echo $display_text[$button]?>"></span><?php
-    endforeach;
-    ?>
-</div>
+foreach ($valid_display_buttons as $button):
+    ?><span class="st_<?php echo $button ?>" displayText="<?php echo $display_text[$button]?>"></span><?php
+endforeach;
